@@ -1,0 +1,72 @@
+body{
+    position:relative;
+    background-color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    color: 333333;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*header*/
+.CrystalLogo{
+    position: absolute;
+    width: 40px;
+    height: 38.86px;
+    left: 45px;
+    top: 40px;
+}
+
+.Hi{
+    position: absolute;
+    width: 33px;
+    height: 26px;
+    left: 1434px;
+    top: 45px;
+    
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 26px;
+    /* identical to box height */
+    
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    text-decoration-line: underline;
+    
+    color: #333333;    
+}
+
+.Hi a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*content*/
+
+
+/*footer*/
+.footer{
+    color:#7A7A7A;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.email{
+    margin-left: 50px;
+}
+.weChat{
+    margin-left: 50px;
+}
+
+.footer a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}

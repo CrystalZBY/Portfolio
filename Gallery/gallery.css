@@ -1,0 +1,160 @@
+body{
+    position:relative;
+    background-color: #333333;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*header*/
+.CrystalLogo{
+    position: absolute;
+    width: 40px;
+    height: 38.86px;
+    left: 45px;
+    top: 40px;
+}
+
+.section-title{
+    position: absolute;
+    width: 99px;
+    height: 26px;
+    left: 706px;
+    top: 47px;
+
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 26px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+    text-decoration-line: underline;
+
+    color: #ffffff;
+}
+.section-title a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.Hi{
+    position: absolute;
+    width: 33px;
+    height: 26px;
+    left: 1434px;
+    top: 45px;
+    
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 26px;
+    /* identical to box height */
+    
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    text-decoration-line: underline;
+    
+    color: #ffffff;    
+}
+
+.Hi a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*content*/
+.gallery-illustration{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    left: 0px;
+    top: 118px;
+}
+
+.scroll-gallery{
+    position: absolute;
+    width: 990px;
+    height: 400px;
+    left: 522px;
+    top: 217px;
+    background-color: #333333;
+
+    display: flex;
+    flex-direction:row;
+    justify-content: flex-start;
+    align-items: center;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+.scroll-gallery .scroll {
+    display: inline-block;
+}
+.scroll{
+    transition: all 0.5s;
+    transform-origin: center center;
+}
+.scroll:hover{
+    transform: scale(0.95);
+}
+#Strangers{
+    margin: 10px;
+    height: 400px;
+    width: 400px;
+}
+#TheLastSupper{
+    margin: 10px;
+    width: 545.74px;
+    height: 400px;
+}
+#Tangled{
+    margin: 10px;
+    width: 512.5px;
+    height: 400px; 
+}
+#Dog{
+    margin: 10px;
+    width: 551.71px;
+    height: 400px;
+}
+#Origin{
+    margin: 10px;
+    width: 922.8px;
+    height: 400px;
+}
+
+
+
+
+/*footer*/
+.footer{
+    color: #949494;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.email{
+    margin-left: 50px;
+}
+.weChat{
+    margin-left: 50px;
+}
+
+.footer a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}

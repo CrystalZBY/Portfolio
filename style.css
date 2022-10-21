@@ -1,0 +1,333 @@
+body{
+    position:relative;
+    background-color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    color: 333333;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*header*/
+.CrystalLogo{
+    position: absolute;
+    width: 40px;
+    height: 38.86px;
+    left: 45px;
+    top: 40px;
+}
+
+.Hi{
+    position: absolute;
+    width: 33px;
+    height: 26px;
+    left: 1434px;
+    top: 45px;
+    
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 26px;
+    /* identical to box height */
+    
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    text-decoration-line: underline;
+    
+    color: #333333;    
+}
+
+.Hi a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*Body*/
+/* Crystal Homescreen Background */
+.svgBackground{
+    position: absolute;
+    width: 481.67px;
+    height: 509.03px;
+    left: 543.08px;
+    top: 128.78px;
+    z-index: -1;
+}
+
+/* Crystal Homescreen Waterfall */
+.svgWaterfall{
+    position: absolute;
+    width: 222px;
+    height: 256.27px;
+    left: 590px;
+    top: 361px;
+    z-index: 1;
+}
+
+/* Crystal Homescreen World 1 */
+.svgWorld{
+    position: absolute;
+    width: 206.43px;
+    height: 105.5px;
+    left: 632.05px;
+    top: 599.5px;
+    z-index: 1;
+
+    transform-origin: center center;
+    transition: all 1s ease;
+}
+.svgWorld:hover{
+    transform: scale(1.1);
+    
+}
+.svgWorld:hover + .hover-world {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s opacity;
+}
+.hover-world{
+    opacity: 0;
+    visibility: hidden;
+
+    position: absolute;
+    width: 133px;
+    height: 25px;
+    left: 480px;
+    top: 639px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 127%;
+    /* or 25px */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    text-decoration-line: underline;
+
+    color: #333333;
+}
+
+
+/* Crystal Homescreen Project 1 */
+.svgProjects{
+    position: absolute;
+    width: 231.25px;
+    height: 262.75px;
+    left: 401px;
+    top: 237.85px; 
+    z-index: 1;
+
+    transition: 1s ease;
+    transform-origin: center center;
+}
+.svgProjects:hover{
+    transform: scale(1.1);
+}
+.svgProjects:hover + .hover-projects {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s opacity;
+}
+.hover-projects{
+    opacity: 0;
+    visibility: hidden;
+
+    position: absolute;
+    width: 71px;
+    height: 25px;
+    left: 341px;
+    top: 257px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 127%;
+    /* or 25px */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    text-decoration-line: underline;
+
+    color: #333333;
+}
+
+/* Crystal Homescreen Liminal 1 */
+.svgLiminal{
+    position: absolute;
+    width: 122.39px;
+    height: 118.21px;
+    left: 550.25px;
+    top: 135.96px;
+    z-index: 1;
+
+    transition: 1s ease;
+    transform-origin: center center;
+}
+.svgLiminal:hover{
+    transform: scale(1.1);
+}
+.svgLiminal:hover + .hover-liminal {/* text appears when hover over the illustration */
+    visibility: visible;
+    opacity: 1;
+    transition: 1s opacity;
+}
+.hover-liminal{
+    opacity: 0;
+    visibility: hidden;
+
+    position: absolute;
+    width: 68px;
+    height: 25px;
+    left: 457px;
+    top: 172px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 127%;
+    /* or 25px */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    text-decoration-line: underline;
+
+    color: #333333;
+}
+
+/* Crystal Homescreen Gallary 2 */
+.svgGallery{
+    position: absolute;
+    width: 105.39px;
+    height: 94.98px;
+    left: 979px;
+    top: 217px;
+    z-index: 1;
+
+    transition: 1s ease;
+    transform-origin: center center;
+}
+.svgGallery:hover{
+    transform: scale(1.1);
+}
+.svgGallery:hover + .hover-gallery {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s opacity;
+}
+.hover-gallery{
+    opacity: 0;
+    visibility: hidden;
+
+    position: absolute;
+    width: 66px;
+    height: 25px;
+    left: 1111px;
+    top: 240px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 127%;
+    /* or 25px */
+
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    text-decoration-line: underline;
+
+    color: #333333;
+}
+
+/* Crystal Homescreen Info */
+.svgInfo{
+    position: absolute;
+    width: 412.93px;
+    height: 565.98px;
+    left: 698.07px;
+    top: 128.06px;
+    z-index: 1;
+
+    transition: 1s ease;
+    transform-origin: center center;
+}
+.svgInfo:hover{
+    transform: scale(1.05);
+}
+.svgInfo:hover + .hover-info {
+    visibility: visible;
+    opacity: 1;
+    transition: 1s opacity;
+}
+.hover-info{
+    opacity: 0;
+    visibility: hidden;
+
+    position: absolute;
+    width: 57px;
+    height: 25px;
+    left: 869px;
+    top: 103px;
+
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 127%;
+    /* or 25px */
+    display: flex;
+    align-items: center;
+   
+    letter-spacing: -0.02em;
+    text-decoration-line: underline;
+
+    color: #333333;
+}
+   
+/*Intro text*/
+.introduction{
+    position: absolute;
+    width: 212px;
+    height: 75px;
+    left: 136px;
+    top: 380px;
+    
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 127%;
+    /* or 25px */
+    
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    
+    color: #333333;    
+}
+
+
+/*footer*/
+.footer{
+    color:#7A7A7A;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.email{
+    margin-left: 50px;
+}
+.weChat{
+    margin-left: 50px;
+}
+
+.footer a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media screen and (min-width: 900px){
+    .gallery{
+        display: flex;
+    }
+}
+

@@ -1,0 +1,185 @@
+body{
+    position:relative;
+    background-color: white;
+    font-family: 'Josefin Sans', sans-serif;
+    color: 333333;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*header*/
+.CrystalLogo{
+    position: relative;
+    width: 40px;
+    height: 38.86px;
+    padding-left: 45px;
+    padding-top: 40px;
+}
+
+.section-title{
+    position: absolute;
+    width: 99px;
+    height: 26px;
+    left: 706px;
+    top: 47px;
+
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 26px;
+    /* identical to box height */
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.02em;
+    text-decoration-line: underline;
+
+    color: #333333;
+}
+.section-title a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+.Hi{
+    position: absolute;
+    width: 33px;
+    height: 26px;
+    left: 1434px;
+    top: 45px;
+    
+    font-family: 'Josefin Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 26px;
+    /* identical to box height */
+    
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    text-decoration-line: underline;
+    
+    color: #333333;    
+}
+.Hi a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*content*/
+.project-illustration{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    left: 0px;
+    top: 118px;
+}
+
+.project-category{
+    position:relative;
+    width: 1200px;
+    height: 468px;
+    display:flex;
+    flex-direction: column;
+    padding-left: 600px;
+    margin-top: 50px;
+}
+
+.category-item {
+    display: flex;
+    width: 70%;
+    border-bottom: 1px solid lightgrey;
+    padding-top: 5em;
+}
+.category-item .category-name {
+    flex-grow: 2;
+    margin-left: 250px;
+
+    font-weight: 700;
+    font-size: 55px;
+    letter-spacing: -0.02em;
+    color: #333333;
+}
+.category-item .category-number {
+    align-self: center;
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    color: #333333;
+}
+
+/* .project-illustration{
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    left: 0px;
+    top: 118px; 
+}
+
+#uiDesign{
+    position: absolute;
+    width: 370px;
+    height: 231px;
+    left: 594px;
+    top: 172px;
+}
+
+#industrialDesign{
+    position: absolute;
+    width: 370px;
+    height: 231px;
+    left: 994px;
+    top: 433px;
+}
+
+#Film{
+    position: absolute;
+    width: 370px;
+    height: 230.71px;
+    left: 594px;
+    top: 433px;
+}
+
+#Animation{
+    position: absolute;
+    width: 370px;
+    height: 230.71px;
+    left: 994px;
+    top: 174px;
+} */
+
+/*footer*/
+.footer{
+    color:#7A7A7A;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.email{
+    margin-left: 50px;
+}
+.weChat{
+    margin-left: 50px;
+}
+
+.footer a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+@media screen and (min-width: 900px){
+    .gallery{
+        display: flex;
+    }
+}
