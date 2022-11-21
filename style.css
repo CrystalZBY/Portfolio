@@ -8,6 +8,27 @@ body{
 }
 
 /*header*/
+/* .header{
+    position: fixed;
+    width:100%;
+    top: 40px;
+    padding-left: 45px;
+    padding-right: 45px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.CrystalLogo{
+    position: relative;
+    width: 40px;
+    height: 38.86px;
+} */
+/* .nav{
+    display:flex;
+    justify-content: end;
+    flex-direction: row;
+    width:100%;
+} */
+
 .CrystalLogo{
     position: absolute;
     width: 40px;
@@ -15,7 +36,6 @@ body{
     left: 45px;
     top: 40px;
 }
-
 .Hi{
     position: absolute;
     width: 33px;
@@ -23,6 +43,8 @@ body{
     left: 1434px;
     top: 45px;
     
+    font-family: 'Josefin Sans';
+    font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 26px;
@@ -33,13 +55,13 @@ body{
     letter-spacing: -0.02em;
     text-decoration-line: underline;
     
-    color: #333333;    
+    color: #333333;
 }
-
 .Hi a, a:hover, a:focus, a:active {
     text-decoration: none;
-    color: inherit;
+    color: #333333;
 }
+
 
 /*Body*/
 /* Crystal Homescreen Background */
