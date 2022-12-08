@@ -15,7 +15,6 @@ body{
     left: 45px;
     top: 40px;
 }
-
 .Hi{
     position: absolute;
     width: 33px;
@@ -36,11 +35,47 @@ body{
     text-decoration-line: underline;
     
     color: #333333;
-    
+}
+.Hi a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: #333333;
 }
 
-.Hi a, a:hover, a:focus, a:active {
+/* Content */
+.blog-image{
+    width: 500px;
+}
+
+.blog-title{
+    color: navy;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.blog-content{
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+/*footer*/
+.footer{
+    color:#7A7A7A;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+}
+.email{
+    margin-left: 50px;
+}
+.weChat{
+    margin-left: 50px;
+}
+
+.footer a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
 }
-
