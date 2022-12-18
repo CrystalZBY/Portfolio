@@ -4,21 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>UI</title>
 
-    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="UI.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Lexend:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <!---Header-->
+    <!-- header -->
     <div class="header">
         <!-- logo -->
         <div class="logo">
             <a href="../index.html">
-                <img class="CrystalLogo" src="../Assets/CrystalZ Logo - Dark.svg" alt="">
+                <img class="CrystalLogo" src="../../Assets/CrystalZ Logo - Dark.svg" alt="">
             </a>
         </div>
         <!-- navbar -->
@@ -28,36 +27,38 @@
         <div class="hi">
             <a href="../Contact/contact.html" target="_blank">Hi!</a>
         </div>
-    </div>   
+    </div>  
 
     <!--Content-->
     <div class="main-content">
-        <div class="project-illustration">
-            <img src="Projects.svg" alt="">
+        <div class="scroll-projects">
+            <div class="scroll">
+                <img id="Calando" src="UI_projects_images/Calando.jpg" alt="">
+            </div>
+            <div class="scroll">
+                <img id="Frisadhere" src="UI_projects_images/Frisadhere.jpg" alt="">
+            </div>
         </div>
-    
+        
         <div class="project-category">
-            <div class="category-item">
-                <div class="category-number">01.</div>
-                <div class="category-name">
+            <div class="category-item-clicked">
+                <div class="category-number-clicked">01.</div>
+                <div class="category-name-clicked">
                     <a href="UI/UI.html" target="_blank">
                         UI/UX.</div>
                     </a>
             </div>
 
-            <div class="category-item">
+            <div class="category-item-unclicked">
                 <div class="category-number">02.</div>
-                <div class="category-name">Industrial Design.</div>
             </div>
 
-            <div class="category-item">
+            <div class="category-item-unclicked">
                 <div class="category-number">03.</div>
-                <div class="category-name">Film & Animation.</div>
             </div>
 
-            <div class="category-item">
+            <div class="category-item-unclicked">
                 <div class="category-number">04.</div>
-                <div class="category-name">Interactive Art.</div>
             </div>
 
         </div>
@@ -69,6 +70,5 @@
         <li class="email"><a href="mailto:crystalzby1224@gmail.com" target="_blank">email.</a></li>
         <dli class="weChat">weChat.</li>
     </ul>
-    
 </body>
 </html>
