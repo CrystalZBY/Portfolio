@@ -101,6 +101,25 @@ body{
     margin: 10px;
     width: 1000px;
 }
+.project-title{
+    position:absolute;
+    display:flex;
+    justify-content: space-between;
+    width: auto;
+    height:auto;
+    left: 50px;
+    top: 550px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-size: 18px;
+    font-weight:400;
+    color: #333333;
+    text-decoration-line: none;
+}
+.project-title a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: #333333;
+}
 
 .project-category{
     position:relative;

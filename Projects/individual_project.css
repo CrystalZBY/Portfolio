@@ -1,0 +1,83 @@
+/*header*/
+.header{
+    position: fixed;
+    width: 95%;
+    margin:3%;
+    padding:0%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width:4%;
+    height:auto;
+    position: relative;
+}
+.CrystalLogo{
+    position: relative;
+    width: 32px;
+    height: auto;
+}
+.hi{
+    position: relative;
+    width: 3%;
+    height: auto;
+
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+
+    line-height: 26px;
+    letter-spacing: -0.02em;
+    text-decoration-line: underline;
+    color:#333333;
+}
+.hi a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color:#333333;
+}
+.section-title{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 26px;
+    letter-spacing: -0.02em;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.section-title a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*footer*/
+.footer{
+    position: fixed;
+    width: 20%;
+    margin:3%;
+    padding:0%;
+    left:0;
+    bottom:0;
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    column-gap: 40%;
+    font-family: 'Josefin Sans', sans-serif;
+    color:#7A7A7A;
+}
+.footer a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
+#project{
+    position:relative;
+    width:100%;
+    height: 600px;
+    top: 130px;
+    display:flex;
+    justify-content: center;
+}

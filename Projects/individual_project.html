@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+
+    <link rel="stylesheet" href="individual_project.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&family=Lexend:wght@400;700;900&display=swap" rel="stylesheet">
+    
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/showdown/dist/showdown.min.js"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <!-- logo -->
+        <div class="logo">
+            <a href="../index.html">
+                <img class="CrystalLogo" src="../Assets/CrystalZ Logo - Dark.svg" alt="">
+            </a>
+        </div>
+        <!-- navbar -->
+        <div class="section-title">
+            <a href="projects.html" target="_blank">PROJECT.</a>
+        </div>
+        <div class="hi">
+            <a href="../Contact/contact.html" target="_blank">Hi!</a>
+        </div>
+    </div>  
+
+    <div id="project"></div>
+
+    <!---Footer-->
+    <ul class="footer">
+        <li class="insta"><a href="https://www.instagram.com/crystalbyzh/" target="_blank">insta.</a></li>
+        <li class="email"><a href="mailto:crystalzby1224@gmail.com" target="_blank">email.</a></li>
+        <dli class="weChat">weChat.</li>
+    </ul>
+
+    <script>
+        let params = new URLSearchParams(document.location.search);
+        let id = params.get('id');
+        console.log(id);
+  
+        var client = contentful.createClient({
+            space: 'h5mh44f99pyo',
+            accessToken: 'tuiXjqgZU8N9fXntb3zuX6MOCLcnLSuZOH7LXjJTmtk',
+        });
+  
+        client.getEntry(id).then(entry => {
+          // log the title for all the entries that have it
+          let blog = document.getElementById('project');
+  
+          console.log(entry);
+          let converter = new showdown.Converter();
+          let text = entry.fields.body;
+          let body = converter.makeHtml(text);
+          let html = `
+            <a href="./individual_project.html?id=${entry.sys.id}" >
+                <div class="project-container">
+                    <img class='blog-image' src='${entry.fields.image.fields.file.url}'>
+                    ${body}
+                </div>
+            </a>
+        `;
+        blog.innerHTML += html;
+        });
+      </script>
+
+</body>
+</html>
