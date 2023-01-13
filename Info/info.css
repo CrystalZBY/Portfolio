@@ -1,5 +1,64 @@
 body{
     position:relative;
+    width: 100%;
+    font-family: 'Josefin Sans', sans-serif;
+    color: 333333;
+    margin: 0px;
+    padding: 0px;
+}
+
+/*header*/
+.header{
+    position: fixed;
+    width: 95%;
+    margin:3%;
+    padding:0%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width:4%;
+    height:auto;
+    position: relative;
+}
+.CrystalLogo{
+    position: relative;
+    width: 32px;
+    height: auto;
+}
+.hi{
+    position: relative;
+    width: 3%;
+    height: auto;
+
+    font-family: 'Josefin Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22px;
+
+    line-height: 26px;
+    letter-spacing: -0.02em;
+    text-decoration-line: underline;
+    color:#333333;
+}
+.hi a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color:#333333;
+}
+.section-title{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 26px;
+    letter-spacing: -0.02em;
+}
+.section-title a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}body{
+    position:relative;
+    width: 100%;
     background-color: white;
     font-family: 'Josefin Sans', sans-serif;
     color: 333333;
@@ -8,64 +67,130 @@ body{
 }
 
 /*header*/
-.CrystalLogo{
-    position: absolute;
-    width: 40px;
-    height: 38.86px;
-    left: 45px;
-    top: 40px;
+.header{
+    position: fixed;
+    width: 95%;
+    margin:3%;
+    padding:0%;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
 }
+.logo{
+    width:4%;
+    height:auto;
+    position: relative;
+}
+.CrystalLogo{
+    position: relative;
+    width: 32px;
+    height: auto;
+}
+.hi{
+    position: relative;
+    width: 3%;
+    height: auto;
 
-.Hi{
-    position: absolute;
-    width: 33px;
-    height: 26px;
-    left: 1434px;
-    top: 45px;
-    
-    font-family: 'Josefin Sans';
+    font-family: 'Josefin Sans', sans-serif;
     font-style: normal;
     font-weight: 700;
-    font-size: 26px;
+    font-size: 22px;
+
     line-height: 26px;
-    /* identical to box height */
-    
-    display: flex;
-    align-items: center;
     letter-spacing: -0.02em;
     text-decoration-line: underline;
-    
-    color: #333333;    
+    color:#333333;
 }
-
-.Hi a, a:hover, a:focus, a:active {
+.hi a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color:#333333;
+}
+.section-title{
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 26px;
+    letter-spacing: -0.02em;
+}
+.section-title a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
 }
 
-/*content*/
+/* content */
+.info-1{
+    display:flex;
+    background-color: white;
+    width:auto;
+    height:865px;
+    z-index: -1;
+}
+.svgBackground{
+    position: absolute;
+    width: 670px;
+    height: auto;
+    left: -30px;
+    top: 75px;
+}
+.svgInfo{
+    position: absolute;
+    width: 604px;
+    height: 827px;
+    left: 199px;
+    top: 102px;
+}
 
+#name{
+    position: absolute;
+    width: 413px;
+    height: 40px;
+    left: 826px;
+    top: 333px;
+    font-weight: 700;
+    font-size: 40px;
+    letter-spacing: -0.02em;
+    color: #333333;
+}
+#introText{
+    position: absolute;
+    width: 554px;
+    height: 92px;
+    left: 826px;
+    top: 411px;
+    font-weight: 400;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    color: #333333;
+}
+
+.info-2{
+    display:flex;
+    background-color: #FFB118;
+    width:auto;
+    height: 865px;
+}
 
 /*footer*/
 .footer{
-    color:#7A7A7A;
     position: fixed;
-    bottom: 0;
-    left: 0;
+    width: 20%;
+    margin:3%;
+    padding:0%;
+    left:0;
+    bottom:0;
     list-style: none;
+
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     align-items: flex-end;
     justify-content: space-between;
+    column-gap: 30%;
+    font-family: 'Josefin Sans', sans-serif;
+    color:#333333;
 }
-.email{
-    margin-left: 50px;
-}
-.weChat{
-    margin-left: 50px;
-}
-
 .footer a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
